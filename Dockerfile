@@ -1,4 +1,4 @@
-FROM node:18 AS build
+FROM docker.m.daocloud.io/node:18 AS build
 
 WORKDIR /opt/node_app
 
@@ -12,7 +12,7 @@ ARG NODE_ENV=production
 
 RUN yarn build:app:docker
 
-FROM nginx:1.24-alpine
+FROM docker.m.daocloud.io/nginx:1.24-alpine
 
 COPY --from=build /opt/node_app/excalidraw-app/build /usr/share/nginx/html
 

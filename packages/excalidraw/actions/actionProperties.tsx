@@ -792,12 +792,10 @@ export const actionChangeFontFamily = register({
         },
         {
           value: FONT_FAMILY.XiaolaiSC,
-          text: t("labels.code"),
+          text: "小赖字体",
           icon: FontFamilyCodeIcon,
           testId: "font-family-xiaolaisc",
         }
-
-
       ];
 
     return (

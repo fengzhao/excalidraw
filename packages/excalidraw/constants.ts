@@ -120,7 +120,7 @@ export const FONT_FAMILY = {
   Helvetica: 2,
   Cascadia: 3,
   Assistant: 4,
-  XiaolaiSC: 5, // 这一行是新增的
+  XiaolaiSC: 5,
 };
 
 export const THEME = {
